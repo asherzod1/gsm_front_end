@@ -1,0 +1,66 @@
+.layout{
+  display: flex;
+
+  .right{
+    width: 360px;
+    display: flex;
+    .buildings{
+      width: 70%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-top:60px;
+
+      .buildings-item{
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: center;
+        &--active{
+          background: #3F51B5 !important;
+          color: #fff !important;
+          border: 1px solid #ffffff !important;
+        }
+        &--button{
+          font-size: 16px;
+          width: 90%;
+          height: 40px;
+          border-radius: 8px;
+          outline: none;
+          color: #3F51B5;
+          cursor: pointer;
+          border: 1px solid transparent;
+          background: none;
+          &:hover{
+            border: 1px solid #3F51B5;
+          }
+        }
+      }
+    }
+    .sensors{
+      border-left: 1px solid #DDD;
+      border-right: 1px solid #DDD;
+      width: 40%;
+      padding: 30px 10px 30px 20px;
+
+      .sensors-item--button{
+        text-align: left;
+        width: 100%;
+        border: none;
+        background: #ffffff;
+        color: #666;
+        font-size: 15px;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+      .sensors-item--button--active{
+
+        background: #ffffff;
+        color: #3F51B5;
+      }
+    }
+  }
+  .content{
+    padding: 30px;
+    flex: 1;
+  }
+}
